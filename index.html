@@ -1,0 +1,105 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Site Title Here</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1"> 
+		<link rel="shortcut icon" type="image/x-icon" href="#">
+        <!-- Place favicon.ico in the root directory -->
+        
+		<!-- CSS here -->
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/css/owl.carousel.min.css">   
+        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="assets/css/responsive.css">
+    </head>
+    <body>
+
+       
+    <!-- header-area START -->
+    <div class="header-area">
+        <div class="container">
+            <div class="row ">
+                <div class="col-6 ">
+                    <div class="menu-area">
+                        <nav>
+                            <ul id="nav">
+                                <li><a href="#Eduflex" class="active">Eduflex</a></li>
+                                <li><a href="#Paynote">Paynote</a></li>    
+                                <li><a href="#Uplann">Uplann</a></li>    
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <div class="col-6 ">
+                    <div class="social_link">
+                        <ul>
+                            <li>
+                                <a href="#">twtter</a>
+                            </li>
+                            <li>
+                                <a href="#">facebook</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- header-area END -->
+
+
+    <main>
+
+        <section class="page_slide owl-carousel">
+            <div class="slider_blk" data-hash="Eduflex">
+                <img src="assets/img/bg3.jpg" alt="">
+            </div>
+            <div class="slider_blk" data-hash="Paynote">
+                <img src="assets/img/bg1.jpg" alt="">
+            </div>
+            <div class="slider_blk" data-hash="Uplann">
+                <img src="assets/img/bg2.jpg" alt="">
+            </div>
+        </section>
+
+    </main>
+    
+		<!-- JS here --> 
+        <script src="assets/js/jquery-3.4.1.min.js"></script>
+        <script src="assets/js/popper.min.js"></script>
+        <script src="assets/js/bootstrap.min.js"></script>
+        <script src="assets/js/owl.carousel.min.js"></script> 
+        <script src="assets/js/main.js"></script>
+        <script>
+            //Slider Active
+            $('.page_slide').owlCarousel({
+                items: 1,
+                loop: true,
+                center: true,
+                margin: 10,
+                URLhashListener: true,
+                autoplayHoverPause: true,
+                startPosition: 'URLHash',
+                smartSpeed: 750
+            });
+
+            //menu Btn Active Class
+            var navLink = document.querySelectorAll(".menu-area ul li a")
+
+            navLink.forEach(navLinks => {
+                navLinks.addEventListener("click", () => {
+                    navLinksRemove()
+                    navLinks.classList.add("active")
+                })
+            })
+            function navLinksRemove() {
+                navLink.forEach(navLinks => {
+                    navLinks.classList.remove('active')
+                })
+            }
+        </script>
+    </body>
+</html>
