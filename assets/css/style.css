@@ -99,6 +99,10 @@ li {
   
 position: absolute;top: 0;}
 
+.menu-area {}
+
+.menu-area nav {margin-top: 40px;margin-left: 40px;}
+
 .header-area ul li a {position: relative;}
 
 .header-area ul li a:hover:after {opacity: 1;width: 100%;}
@@ -108,7 +112,10 @@ position: absolute;top: 0;}
   list-style: none;
   
 }
-
+.social_link ul li a:after {
+  width: 100%;
+  opacity: 1;
+}
 .menu-area .logo h2 {color: #fff;margin-bottom: 20px;}
 
 .menu-area nav ul li a {
@@ -140,12 +147,12 @@ margin-bottom: 10px;}
 
 .social_link {text-align: right;}
 
-.social_link ul li a {font-size: 20px;text-transform: capitalize;display: block;margin-left: 50px;color: #fff;}
+.social_link ul li a {padding: 0 10px; font-size: 20px;text-transform: capitalize;display: block;margin-left: 50px;color: #fff;}
 
 .social_link li {display: inline-block;}
 
 section.page_slide {height: 100vh;overflow: hidden;position: relative;z-index: 1;
-clip-path: polygon(22% 18%, 14% 20%, 7% 22%, 5% 17%, 0% 12%, 0% 56%, 0% 89%, 18% 95%, 37% 96%, 61% 96%, 84% 94%, 100% 91%, 100% 71%, 97% 55%, 94% 43%, 93% 32%, 92% 23%, 89% 14%, 82% 9%, 69% 11%, 53% 7%, 41% 12%, 30% 13%);}
+/* clip-path: polygon(22% 18%, 14% 20%, 7% 22%, 5% 17%, 0% 12%, 0% 56%, 0% 89%, 18% 95%, 37% 96%, 61% 96%, 84% 94%, 100% 91%, 100% 71%, 97% 55%, 94% 43%, 93% 32%, 92% 23%, 89% 14%, 82% 9%, 69% 11%, 53% 7%, 41% 12%, 30% 13%); */}
 
 section.page_slide:after {content: "";position: absolute;width: 100%;height: 100%;left: 0;top: 0;background: rgb(0 0 0 / 30%);z-index: 0;}
 
@@ -159,6 +166,10 @@ section.page_slide:after {content: "";position: absolute;width: 100%;height: 100
 @media (max-width: 767px) {
   .social_link {position: fixed;bottom: 20px;left: 50%;width: 100%;transform: translateX(-50%);text-align: center;}
 
+.menu-area nav ul li a {font-size: 20px;margin-bottom: 15px;}
+
 .social_link a {margin-left: 0 !important;margin: 0 15px;}
+
+.menu-area nav {margin-left: 30px;margin-top: 50px;}
 
 }
